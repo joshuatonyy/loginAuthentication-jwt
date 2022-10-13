@@ -1,0 +1,147 @@
+<html>
+
+<head>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.2/dist/flowbite.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/source-code-pro.min.css"> 
+</head>
+
+<body>
+
+    <style>
+        #judul{
+            font-family: 'Source Code Pro';
+        }
+    </style>
+    <!-- Navbar -->
+    <nav class="border-gray-200 px-2 sm:px-4 py-2.5 fixed w-full bg-gradient-to-b from-gray-900 to-black">
+        <div class="container flex flex-wrap justify-between items-center mx-auto">
+            <a href="https://onetreeplanted.org/" class="flex items-center">
+                <img src="Untitled-2.png" class="mr-3 h-10 sm:h-12" alt="Flowbite Logo">
+                <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white"></span>
+            </a>
+            <button data-collapse-toggle="navbar-default" type="button"
+                class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-800 focus:outline-none dark:text-gray-400 dark:hover:bg-gray-700"
+                aria-controls="navbar-default" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                        clip-rule="evenodd"></path>
+                </svg>
+            </button>
+            <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                <ul
+                    class="flex flex-col p-4 mt-4 bg-gray-600 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-transparent dark:bg-gray-800 md:dark:bg-transparent dark:border-gray-700">
+                    <li>
+                        <a href="index.html"
+                            class="block py-2 pr-4 pl-3 text-white rounded hover:bg-gray-400 md:hover:bg-transparent md:border-0 md:hover:text-green-500 md:p-0 dark:text-gray-400 md:dark:hover:text-green-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                            aria-current="page">About us</a>
+                    </li>
+                    <li>
+                        <a href="register.html"
+                            class="block py-2 pr-4 pl-3 text-white rounded hover:bg-gray-400 md:hover:bg-transparent md:border-0 md:hover:text-green-500 md:p-0 dark:text-gray-400 md:dark:hover:text-green-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
+                            Register</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar END -->
+
+    <!-- Content -->
+    <div class="bg-black flex justify-center items-center z-40 min-h-screen w-full">
+        <div class="px-4 py-16 mx-auto max-w-screen-xl sm:px-6 lg:px-8 bg-black-600">
+            <div class="max-w-lg mx-auto">
+                <h1 class="text-2xl font-bold text-center text-green-500 sm:text-3xl" id="judul">Welcome Reforestation Crews!</h1>
+                <p class="max-w-md mx-auto mt-4 text-center text-green-500" id="judul">
+                    Let's plant the trees 🌳🌳🌳
+                </p>
+                <form action="" class="p-8 mt-6 mb-0 rounded-lg shadow-2xl space-y-4 bg-gray-800">
+                    <div class="flex justify-center items-center">
+                        <p class="text-lg font-medium text-white">Sign in to your account</p>
+                    </div>
+                    <div>
+                        <label for="username" class="text-sm font-medium text-white">Username</label>
+
+                        <div class="relative mt-1">
+                            <input type="username" id="usernameLogin"
+                                class="w-full p-4 pr-12 text-sm border-gray-200 rounded-lg shadow-sm"
+                                placeholder="Enter username" />
+
+                            <span class="absolute inset-y-0 inline-flex items-center right-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-gray-400" fill="none"
+                                    viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207" />
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="password" class="text-sm font-medium text-white">Password</label>
+
+                        <div class="relative mt-1">
+                            <input type="password" id="password"
+                                class="w-full p-4 pr-12 text-sm border-gray-200 rounded-lg shadow-sm"
+                                placeholder="Enter password" />
+
+                            <span class="absolute inset-y-0 inline-flex items-center right-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-gray-400" fill="none"
+                                    viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+
+                    <button type="submit"
+                        class="block w-full px-5 py-3 text-sm font-medium text-white bg-indigo-600 rounded-lg" id="loginButton" onclick="return onLogin()">
+                        Sign in
+                    </button>
+
+                    <p class="text-sm text-center text-gray-500">
+                        Not registered yet?
+                        <a class="underline" href="">Sign up</a>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Content END -->
+
+    <!-- FOOTER -->
+    <div>
+        <footer class="fixed bottom-0 bg-black w-full z-50">
+            <div class="max-w-5xl px-4 py-5 mx-auto sm:px-6 lg:px-8">
+                <p class="max-w-md mx-auto mt-8 leading-relaxed text-center text-green-500">
+                    joshuatonyy.
+                </p>
+
+                <ul class="flex justify-center gap-2 mt-5 md:gap-8">
+                    <li>
+                        <a href="https://github.com/joshuatonyy" rel="noopener noreferrer" target="_blank"
+                            class="text-green-500 transition hover:text-white/75">
+                            <span class="sr-only">GitHub</span>
+                            <svg class="w-10 h-10" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path fill-rule="evenodd"
+                                    d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+    <!-- FOOTER END -->
+    <script src="https://unpkg.com/flowbite@1.5.2/dist/flowbite.js"></script>
+    <script src="func.js"></script>
+</body>
+
+</html>
