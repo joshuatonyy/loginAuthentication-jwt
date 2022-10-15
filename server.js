@@ -1,3 +1,7 @@
+if (process.env.NODE_EN !== 'production'){
+    require('dotenv').config();
+}
+
 const express = require('express')
 const mongoose = require('mongoose')
 const indexRouter = require('./app/routes/index')
@@ -5,7 +9,7 @@ const loginRouter = require('./app/routes/login')
 const registerRouter = require('./app/routes/register')
 const app = express()
 
-mongoose.connect(process.env.DATABASE_URL, { userNewUrlParser: true })
+mongoose.connect(process.env.DATABASE_URL, { useNewUrlParser: true })
 const db = mongoose.connection
 db.on('error', error => console.log(error))
 db.once('open', () => console.log('Connected to Mongoose'))
@@ -18,7 +22,7 @@ app.use(express.urlencoded({
 }))
 
 app.use('/', indexRouter)
-app.use('/login', loginRouter)
-app.use('/register', registerRouter)
+// app.use('/login', loginRouter)
+// app.use('/register', registerRouter)
 
 app.listen(5000)
